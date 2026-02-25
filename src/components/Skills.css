@@ -1,0 +1,108 @@
+.skills-section {
+    background: var(--bg-2);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-head-center {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-head-center .section-tag::before,
+.section-head-center .section-tag::after {
+    display: none;
+}
+
+.skills-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.skill-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-group-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.skill-icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.skill-icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 1.5rem 0.5rem;
+    border-radius: var(--radius);
+    cursor: default;
+    transition: var(--transition);
+    width: 120px;
+}
+
+.skill-icon-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: var(--shadow), 0 0 20px var(--accent-glow);
+}
+
+.skill-img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.skill-icon-card:hover .skill-img {
+    transform: scale(1.15) rotate(-3deg);
+}
+
+.skill-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 576px) {
+    .skill-icon-grid {
+        gap: 0.8rem;
+    }
+
+    .skill-icon-card {
+        width: calc(33.33% - 0.6rem);
+    }
+
+    .skill-img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .skill-icon-card {
+        padding: 1rem 0.25rem;
+    }
+}

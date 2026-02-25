@@ -1,0 +1,100 @@
+.experience-section {
+    background: var(--bg-2);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exp-card {
+    padding: 2rem;
+    border-left: 4px solid var(--accent);
+    position: relative;
+}
+
+.exp-card::before {
+    content: '';
+    position: absolute;
+    top: 1.8rem;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--gradient);
+    border: 3px solid var(--bg-2);
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.exp-role {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.exp-company {
+    font-size: 0.95rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.exp-current-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.7rem;
+    border-radius: 9999px;
+    background: var(--accent-glow);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.exp-period {
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+}
+
+.exp-desc {
+    margin-top: 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.exp-tech {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.exp-tag {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-glow);
+    border: 1px solid var(--accent);
+    padding: 0.2rem 0.65rem;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .exp-card {
+        padding: 1.5rem;
+    }
+}
