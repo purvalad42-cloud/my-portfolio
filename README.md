@@ -96,3 +96,4 @@ The project is architected for seamless CI/CD integration.
 
 ---
 © 2026 Purva Lad. All rights reserved.
+// Performance optimization
